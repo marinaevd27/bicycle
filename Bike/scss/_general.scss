@@ -1,0 +1,46 @@
+// colors
+$accent1: red;
+
+
+// general
+:root {
+  font-size: 62.5%; /*1rem=10px*/
+}
+
+/* нормалізація стилів */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 50%; /*1rem=8px */
+  }
+}
