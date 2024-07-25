@@ -21,6 +21,51 @@ display: flex;
     color: white;
     display: none;
   }
+
+
+&__buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+&__button {
+  color: white;
+  border: none;
+  background: none;
+}
+&__icon {
+  color: white;
+}
+&__nav {
+  display: flex;
+  align-items: center;
+
+}
+&__logo {
+  max-height: 8rem;
+  object-fit: contain;
+  margin-right: auto;
+}
+&__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+&__menu-list {
+  margin: 0 1rem;
+
+}
+&__link {
+  color: white;
+  text-transform: uppercase;
+}
+
+&__mobile {
+  display: none;
+}
+
   @media (max-width: 992px) {	
     &__burger {
       display: block;
@@ -34,8 +79,15 @@ display: flex;
       gap: 2rem;
       padding-block: 2rem;
       align-items: center;
-      background-color: red;
+      background-color: $accent1;
       width: 100%;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+      transition: all .4s;
+      border-bottom: 1px solid $accent2;
+
+      &.nav--opened {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+      }
     }
     &__nav {
     
@@ -57,47 +109,4 @@ display: flex;
   }
 }
 
-
-.header__buttons {
-  display: flex;
-  justify-content: flex-end;
-  gap: 1rem;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-.header__button {
-  color: white;
-  border: none;
-  background: none;
-}
-.header__icon {
-  color: white;
-}
-.header__nav {
-  display: flex;
-  align-items: center;
-
-}
-.header__logo {
-  max-height: 8rem;
-  object-fit: contain;
-  margin-right: auto;
-}
-.header__menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.header__menu-list {
-  margin: 0 1rem;
-
-}
-.header__link {
-  color: white;
-  text-transform: uppercase;
-}
-
-.header__mobile {
-  display: none;
-}
 

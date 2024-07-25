@@ -1,6 +1,6 @@
 // colors
-$accent1: red;
-
+$accent1: #EB1B23;
+$accent2:#090F13;
 
 // general
 :root {
@@ -19,7 +19,18 @@ $accent1: red;
 
 a {
   text-decoration: none;
+  transition: all .3s;
+  
+  &:hover{
+    color: $accent1;
+  }
+  @media (max-width: 992px) {
+    &:hover{
+      color: $accent2;
+    }
+  }
 }
+
 
 ul {
   list-style: none;
@@ -38,6 +49,7 @@ body {
   padding: 0 2rem;
   position: relative;
 }
+
 
 @media (max-width: 768px) {
   :root {

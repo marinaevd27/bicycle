@@ -1,3 +1,5 @@
+
+// buttons
 .btn{
     margin-top: 3rem;
     padding: 0 2rem;
@@ -29,3 +31,36 @@
     }
 
 }
+// section
+.section {
+    padding-block: 7rem;
+
+
+    &__title {
+        font-size: 4rem;
+        font-weight: 800;
+        position: relative;
+        display: inline-block;
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 7rem;
+            height: .5rem;
+            background-color: $accent1;
+            
+        } 
+        
+        &--center {
+            &::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+        }
+    }
+
+
+  }
+
